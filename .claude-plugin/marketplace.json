@@ -1,5 +1,6 @@
 {
   "name": "tidy-skills-marketplace",
+  "description": "Tidy Dev Team's shared Claude Code skills.",
   "owner": {
     "name": "Tidy Dev Team"
   },
