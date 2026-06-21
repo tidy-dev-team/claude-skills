@@ -1,6 +1,6 @@
 ---
 name: tidy-plugin-scaffold
-description: Scaffold a new standalone Figma plugin pre-wired to match the Tidy DS Toolbox architecture (React 19 + Vite UI, esbuild plugin thread, typed postMessage bridge, three-file module pattern, @shell/@shared/@plugins aliases, Vitest). Built so the plugin can later be merged into the Tidy DS Toolbox as a sub-module by copying one folder and adding three registration lines. Use when starting a new Figma plugin intended for the Tidy DS Toolbox, or when the user asks to scaffold/bootstrap/start a toolbox-compatible Figma plugin.
+description: Scaffold a new standalone Figma plugin structured to drop into the Tidy DS Toolbox as a module later. Use when starting or bootstrapping a new Figma plugin intended for the Tidy DS Toolbox.
 ---
 
 # Tidy Plugin Scaffold
@@ -117,13 +117,5 @@ These are the whole reason the scaffold exists. Do not deviate:
   `*.test.ts` (Vitest). Keep the Figma-bound tree walk / page rendering thin
   around the pure core — that core is the high test seam.
 
-## Migrating into the Tidy DS Toolbox later
-
-1. Copy `src/plugins/<id>/` into the toolbox's `src/plugins/`.
-2. Register the module in `src/moduleRegistry.ts` (id, label, state, icon, `ui`,
-   `handler`, keywords).
-3. Route it in `src/moduleHandlers.ts` (map `target` → `__MODULE_CAMEL__Handler`).
-4. Add `<id>` to the `PluginID` union in `src/shared/types.ts`.
-5. Delete the standalone shell (everything outside `src/plugins/<id>/`).
-
-Nothing inside the module folder should need editing.
+The step-by-step toolbox-merge instructions live in the generated plugin's
+`README.md` (the artifact the user reads when migrating) — not duplicated here.

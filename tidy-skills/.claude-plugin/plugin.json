@@ -1,6 +1,6 @@
 {
   "name": "tidy-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tidy Dev Team's Claude Code skills. Currently: tidy-plugin-scaffold — bootstrap a standalone Figma plugin pre-wired to merge into the Tidy DS Toolbox.",
   "author": { "name": "Tidy Dev Team" },
   "keywords": ["figma", "design-system", "scaffold", "tidy-ds", "skills"]
