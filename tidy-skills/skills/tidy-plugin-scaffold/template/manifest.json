@@ -1,0 +1,12 @@
+{
+  "name": "__PLUGIN_NAME__",
+  "id": "__PLUGIN_ID__",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "editorType": ["figma"],
+  "permissions": ["currentuser"],
+  "networkAccess": {
+    "allowedDomains": ["none"]
+  }
+}

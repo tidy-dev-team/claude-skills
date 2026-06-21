@@ -1,0 +1,12 @@
+{
+  "name": "tidy-skills-marketplace",
+  "owner": {
+    "name": "Tidy Dev Team"
+  },
+  "plugins": [
+    {
+      "name": "tidy-skills",
+      "source": "./tidy-skills"
+    }
+  ]
+}
